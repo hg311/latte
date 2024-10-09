@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    background-color: #F5F5DC; /* Cream background */
+    color: #4B3621; /* Brown text */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 { 
+    text-align: center;
+    color: #8B4513; /* Darker brown for headers */
+    padding: 10px;
+    margin: 20px;
+}
+
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; /* Center content */
+} 
+
+/* Navigation Links */
+nav a {
+    padding: 10px;
+    margin: 5px;
+    font-size: 125%;
+    background-color: #8B4513; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    font-size: 130%;
+    background-color: #4B3621;  
+    color: white; 
+}
+
+/* Image Container and Styling */
+.stepImage {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+}
+
+.stepImage img {
+    width: 200px; /* Square image size */
+    height: 200px; /* Square image size */
+    border: 3px solid #8B4513; /* Dark brown border */
+    border-radius: 10px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Space between images */
+}
+
+/* Initially hide the second image (coffee.png) */
+#coffee_hover {
+    display: none;
+}
+
+#answer {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #4B3621; /* Brown color for text */
+}
+
+/* Make coffee list items larger */
+.coffee-item {
+    font-size: 2em; /* Increase size of coffee items */
+    cursor: pointer;
+    margin: 15px 0;
+    color: #4B3621; /* Default coffee item color */
+}
+
+/* Make description smaller */
+#description p {
+    font-size: 1em; /* Smaller font size for the description */
+    color: #4B3621;
+    margin-top: 20px;
+}
+
+
+
+

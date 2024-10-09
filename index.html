@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Coffee Page</title>
+  <link href="css/latte.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="wrapper">
+    <h1>Crazy Beans Coffee</h1>
+    <nav>
+      <a href="listof.html">Go to List of Coffee</a>
+    </nav>
+
+    <!-- Coffee Joke -->
+    <h3>Why don’t coffee beans ever gossip?</h3>
+	  <h4> Hover over image to find out! 
+	  </h4>
+    <div class="stepImage">
+      <img id="coffee" src="img/question.png" />
+      <img id="coffee_hover" src="img/coffee.png" />
+    </div>
+    <div id="answer"></div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Hover event to show and hide the joke
+      $("#coffee").hover(
+        function() {
+          $("#coffee").hide();
+          $("#coffee_hover").show();
+          $("#answer").html("<h2>Because they’re grounded!</h2>");
+        },
+        function() {
+          $("#coffee_hover").hide();
+          $("#coffee").show();
+          $("#answer").html("");
+        }
+      );
+    });
+  </script>
+
+</body>
+</html>
